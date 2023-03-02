@@ -10,6 +10,8 @@ import Card from './routes/Card';
 
 import { AppProvider } from './context/AppContext';
 
+import { Navigate } from "react-router-dom";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +20,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Login /> },
       { path: "/search", element: <Search /> },
       { path: "/card", element: <Card /> },
+      { path: "*", element: <Navigate to='/' /> },
     ],
   },
 ]);
