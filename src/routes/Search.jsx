@@ -83,7 +83,6 @@ const Search = () => {
             .map((e) => {
               return (
                 <div key={e.name} className="card">
-                  {/* <h2>{e.name}</h2> */}
                   <Link to="/card">
                     <img
                       src={e.card_images[0].image_url}

@@ -11,8 +11,13 @@ const Card = () => {
   const { cardList, detailCard } = useContext(AppContext);
 
   return (
-    <div className="details">
-      {cardList === "" && <Navigate to="/" />}
+    cardList === "" ? (
+      <div>
+        <h1 className="details">Loading</h1>
+        {cardList === "" && <Navigate to="/" />}
+      </div>
+    ) :
+    (<div className="details">
       <img
         src={detailCard.card_images[0].image_url}
         alt={detailCard.card_images[0].image_url}
@@ -35,7 +40,7 @@ const Card = () => {
           Back to List
         </Link>
       </div>
-    </div>
+    </div>)
   );
 };
 
