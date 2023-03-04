@@ -1,16 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
 import Login from './routes/Login';
 import Search from './routes/Search';
 import Card from './routes/Card';
 
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
 
-import { Navigate } from "react-router-dom";
 
 const router = createBrowserRouter([
   {

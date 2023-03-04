@@ -1,13 +1,26 @@
 import React from "react";
 
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "../context/AppContext";
 
 import { Link } from "react-router-dom";
 
 import { Navigate } from "react-router-dom";
 
+import VanillaTilt from 'vanilla-tilt';
+
 const Card = () => {
+
+  useEffect(() => {
+    VanillaTilt.init(document.querySelectorAll("img"),{
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 1,
+      perspective: 1000,
+}); 
+ });
+
   const { cardList, detailCard } = useContext(AppContext);
 
   return (

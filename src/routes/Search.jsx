@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 
 import { useContext, useState } from "react";
 import { AppContext } from "../context/AppContext";
@@ -7,7 +7,20 @@ import { Link, Navigate } from "react-router-dom";
 
 import "../App.css";
 
+import VanillaTilt from 'vanilla-tilt';
+
 const Search = () => {
+
+  useEffect(() => {
+    VanillaTilt.init(document.querySelectorAll(".card"),{
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 1,
+      perspective: 1000,
+}); 
+ });
+
   const { cardList, setDetailCard } = useContext(AppContext);
 
   const [nameFilter, setNameFilter] = useState("");
