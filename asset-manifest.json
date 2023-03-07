@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/project-ygo/static/css/main.b8380643.css",
+    "main.js": "/project-ygo/static/js/main.1042cc60.js",
+    "index.html": "/project-ygo/index.html",
+    "main.b8380643.css.map": "/project-ygo/static/css/main.b8380643.css.map",
+    "main.1042cc60.js.map": "/project-ygo/static/js/main.1042cc60.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8380643.css",
+    "static/js/main.1042cc60.js"
+  ]
+}
