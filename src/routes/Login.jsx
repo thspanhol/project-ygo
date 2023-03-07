@@ -17,7 +17,7 @@ const Login = () => {
 
   return (
     <div className="home">
-      <img className="img-login" src="/blackwing.png" alt="blackwing" />
+      <img className="img-login" src={"https://raw.githubusercontent.com/thspanhol/project-ygo/main/public/blackwing.png"} alt="blackwing" />
       <div>
         <h1>BlackWing</h1>
         <h1>Database</h1>

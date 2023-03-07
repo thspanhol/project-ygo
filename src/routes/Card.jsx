@@ -21,13 +21,13 @@ const Card = () => {
 }); 
  });
 
-  const { cardList, detailCard } = useContext(AppContext);
+  const { detailCard } = useContext(AppContext);
 
   return (
-    cardList === "" ? (
+    detailCard === "" ? (
       <div>
         <h1 className="details">Loading</h1>
-        {cardList === "" && <Navigate to="/" />}
+        <Navigate to="/" />
       </div>
     ) :
     (<div className="details">

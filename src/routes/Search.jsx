@@ -9,7 +9,7 @@ import "../App.css";
 
 import VanillaTilt from 'vanilla-tilt';
 
-const Search = () => {
+const Search = (props) => {
 
   useEffect(() => {
     VanillaTilt.init(document.querySelectorAll(".card"),{
@@ -46,9 +46,11 @@ const Search = () => {
     );
   };
 
+  const data = props.mockCardList === "" ? cardList : props.mockCardList;
+
   return (
     <div className="background">
-      {cardList === "" && <Navigate to="/" />}
+      {cardList === "" && props.mockCardList === "" && <Navigate to="/" />}
       <h1>Card List</h1>
       <div className="menu">
         <input
@@ -83,11 +85,11 @@ const Search = () => {
           Traps
         </button>
       </div>
-      {cardList === "" ? (
+      {data === "" ? (
         <h1>Loading</h1>
       ) : (
         <div className="search">
-          {cardList
+          {data
             .filter(
               (e) =>
                 e.name.toLowerCase().includes(nameFilter.toLowerCase()) &&

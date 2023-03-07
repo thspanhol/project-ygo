@@ -8,14 +8,13 @@ import Card from './routes/Card';
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
 
-
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
       { path: "/", element: <Login /> },
-      { path: "/search", element: <Search /> },
+      { path: "/search", element: <Search mockCardList="" /> },
       { path: "/card", element: <Card /> },
       { path: "*", element: <Navigate to='/' /> },
     ],
