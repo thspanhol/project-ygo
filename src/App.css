@@ -113,8 +113,12 @@
 .home div h1
 {
     color: #fece00;
-    font-size: 400%;
+    font-size: 800%; /* Localmente era 400% Aumentei para 800% para o github pages */
     filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.25));
+}
+.home div p /* Classe inteira feita para o github pages */
+{
+    font-size: 400%;
 }
 .link
 {
