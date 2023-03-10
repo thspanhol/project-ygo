@@ -20,6 +20,7 @@
 .background h1
 {
     margin: 20px;
+    font-size: 3em;
 }
 .background input
 {
@@ -30,29 +31,38 @@
     padding: 5px;
     background-color: #fece00;
     color: #212121;
+    width: 312px;
+    height: 39px;
+    font-size: large;
+}
+.background span
+{
+    font-size: large;
 }
 .btns
 {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 15px;
+    padding: 7.5px;
     background-color:#212121;
     color: #fece00;
-    border: 2px solid #fece00;   
+    border: 3px solid #fece00;  
+    font-size: large; 
 }
 .clicked
 {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 15px;
+    padding: 7.5px;
     background-color: #fece00;
     color: #212121;
-    border: 2px solid #fece00;
+    border: 3px solid #fece00;
     font-weight: bold;
+    font-size: large;
 }
 .menu
 {
@@ -71,9 +81,9 @@
 }
 .card img
 {
-    width: 210.5px;
-    height: 307px;
-    margin: 1px 3px;
+    width: 315.75px;
+    height: 460.5px;
+    margin: 1.5px 4.5px;
 }
 
 /* LOGIN */
@@ -85,7 +95,6 @@
     margin-right: 50%;
     position: absolute;
     filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.25));
-
 }
 .home
 {
@@ -104,16 +113,16 @@
     align-items: center;
     color: #fff;
     margin-top: 200px;
-    margin-left: 55%;
+    margin-left: 50%;
     position: absolute;
 }
 .home div h1
 {
     color: #fece00;
-    font-size: 800%; /* Localmente era 400% Aumentei para 800% para o github pages */
+    font-size: 800%;
     filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.25));
 }
-.home div p /* Classe inteira feita para o github pages */
+.home div p
 {
     font-size: 400%;
 }
@@ -161,6 +170,26 @@
     width: 100%;  
     color: #fff;
 }
+.details h3
+{
+    font-size: 1.755em;
+}
+.details h1
+{
+    font-size: 3em;
+}
+.details h2
+{
+    font-size: 2.25em;
+}
+.details p
+{
+    font-size: 1.5em;
+}
+.details span
+{
+    font-size: 1.5em;
+}
 .details img
 {
     width: 350px;
@@ -195,10 +224,11 @@
     margin-bottom: 10px;
     align-items:start;
     color: #fff;
-    margin-bottom: 20px;
 }
 .details div .link
 {
     display: flex;
     justify-content: center;
+    width: 300px;
+    margin-top: 20px;
 }
