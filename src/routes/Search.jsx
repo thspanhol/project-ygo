@@ -1,31 +1,24 @@
 import React, { useRef, useEffect } from "react";
-
 import { useContext, useState } from "react";
 import { AppContext } from "../context/AppContext";
-
 import { Link, Navigate } from "react-router-dom";
-
 import "../App.css";
-
-import VanillaTilt from 'vanilla-tilt';
+import VanillaTilt from "vanilla-tilt";
 
 const Search = (props) => {
-
   useEffect(() => {
-    VanillaTilt.init(document.querySelectorAll(".card"),{
+    VanillaTilt.init(document.querySelectorAll(".card"), {
       max: 25,
       speed: 400,
       glare: true,
       "max-glare": 1,
       perspective: 1000,
-}); 
- });
+    });
+  });
 
   const { cardList, setDetailCard } = useContext(AppContext);
-
   const [nameFilter, setNameFilter] = useState("");
   const [typeFilter, setTypeFilter] = useState("");
-
   const btnMonsterRef = useRef();
   const btnSpellRef = useRef();
   const btnTrapRef = useRef();
