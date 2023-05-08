@@ -22,7 +22,7 @@ npm start
 
 Ao abrir a aplicação será renderizada uma tela de apresentação informando do que o projeto se trata junto com um botão SEARCH. Clicando nesse botão a página será direcionada para a tela de exibição dos cards, onde terá um input que pode ser usado para buscar cartas pelo nome e também 3 botões que filtram a lista para apenas as cartas do tipo monstro, mágica ou armadilha. Clicando em qualquer carta da lista, a página será redirecionada para uma terceira tela com os detalhes da carta clicada e um botão para voltar para a lista.
 
-## ⚜️ Possiveis alterações
+## ⚜️ Possíveis alterações
 
 * O arquétipo de cartas escolhido pode ser alterado para outro, para isso basta alterar a string presente na linha 18 do arquivo AppContext (project-ygo\src\context\AppContext.jsx)
 * Exemplos de possíveis substituições:
